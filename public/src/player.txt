@@ -1,0 +1,10 @@
+	<div id="now-playing-page" class="row" style="margin:0; padding:0">
+            <div id="now">
+                <img id="now-playing-artwork" src="">
+                <div class="row" id="player">
+                    <div><span class="glyphicon glyphicon-step-backward" aria-hidden="true"></span></div>
+                    <div><span class="glyphicon glyphicon-pause" aria-hidden="true"></span></div>
+                    <div><span class="glyphicon glyphicon-step-forward" aria-hidden="true"></span></div>
+                </div>
+            </div>
+    </div>

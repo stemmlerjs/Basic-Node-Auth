@@ -1,0 +1,14 @@
+ <!-- WELCOME MESSAGE-->
+            <div class="container">
+                <h1 style="font-family: 'Oswald', sans-serif;">Welcome Home!</h1>
+                <p class="lead"><span class="glyphicon glyphicon-headphones" aria-hidden="true"></span> See what's being played around the house</p>
+            </div>
+
+            <!-- DYNAMICALLY GENERATED INFORMATION ABOUT WHO IS PLAYING WHAT, etc. (STATIC FOR NOW) -->
+
+            <div id="user-listening-list">
+                <div class="container" style="background-color: black; height:30px; overflow:hidden">
+                    <h4 style="color: white;margin-top: 7px;">Now Playing - <span style="color:grey"><small>Living Room [Station A], Khalil's Room [Station B], Study [Station D]</small></span></h4>
+               </div>
+          </div>
+         </div>

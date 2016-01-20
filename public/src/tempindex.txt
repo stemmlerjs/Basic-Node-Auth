@@ -1,0 +1,61 @@
+<!--    NOW PLAYING LIST    -->
+                <div class="container" id="listener-listening-row">
+                    <div class="row">
+                        <div class="col-sm-3 users" style="">
+                            <img src="files/userpic.png" style="width:180px; float:left; margin-top:20px; margin-bottom:6px; border: black 2px solid;"></img>
+                            <div class="row">
+                                <p class="username">@khalilstemmler</p>
+                                <p class="tagline">"Am I the only one that thinks that The Birthday Party is still relevant? Can't stop listening to this band..."</p>- 41 minutes ago
+                            </div>
+                        </div>
+
+                        <div class="col-sm-5 now-playing-users" style="">
+                            <p>NOW PLAYING</p>
+                            <img src="files/albumart.jpg"></img>
+                            <div class="row ">
+                                <div class="col-sm-7" style="text-align: right; padding-top:5px; margin-bottom:5px; font-weight: bold; line-height:15px">
+                                    <p style="border-top: solid black 3px;"></p>
+                                    <div class="song-info" style="margin-top:3px;">
+                                        <span style="font-size:20px;">Jennifer's Veil</span></br><span style="color:grey">by </span>The Birthday Party</br><span style="color:grey">from </span>Mutiny/The Bad Seed
+                                    </div>
+                                    <div class="row" style="height:50px;">
+
+                                    </div>
+                                    <div class="row" style="padding-right:15px; margin-top:5px;">
+                                        <p> <a href="#" class="btn btn-primary" role="button"><span class="glyphicon glyphicon-step-backward" aria-hidden="true"></span></a>
+                                            <a href="#" class="btn btn-primary" role="button"><span class="glyphicon glyphicon-pause" aria-hidden="true"></span></a>
+                                            <a href="#" class="btn btn-primary" role="button"><span class="glyphicon glyphicon-step-forward" aria-hidden="true"></span></a>
+                                            <a href="#" class="btn btn-default" role="button">Merge</a></p>
+                                    </div>
+                                    <div class="row" style="padding-right:9px; margin-top:5px;">
+                                        <div class="progress" style="margin-left:10px; margin-right:5px;">
+                                            <div class="progress-bar progress-bar-users" role="progressbar" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100" style="width: 10%;">
+                                                <span class="sr-only">10% Complete</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-3 up-next-playing-users" style="">
+                            <p>UP NEXT</p>
+                            <img src="files/goo-560x560.jpeg" style="width:75px; float:left; margin-top:6px; margin-bottom:6px; border: black 2px solid;"></img>
+                            <div class="row ">
+                                <div class="col-sm-7" style="text-align: right; padding-top:5px; margin-bottom:5px; font-weight: bold; line-height:15px">
+                                    <p style="border-top: solid black 3px;"></p>
+                                    Mildred Pierce</br><span style="color:grey">by </span>Sonic Youth</br>Goo
+
+                                </div>
+                            </div>
+            <img src="files/goo-560x560.jpeg" style="width:75px; float:left; margin-top:6px; margin-bottom:6px; border: black 2px solid;">
+                            <div class="row ">
+                                <div class="col-sm-7" style="text-align: right; padding-top:5px; margin-bottom:5px; font-weight: bold; line-height:15px">
+                                    <p style="border-top: solid black 3px;"></p>
+                                    Cinderella's Big Score</br><span style="color:grey">by </span>Sonic Youth</br>Goo
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>

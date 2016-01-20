@@ -1,0 +1,90 @@
+<!-- views/login.ejs -->
+<!doctype html>
+<html>
+<head>
+    <title>Carcinogen - Home Media Center</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href='https://fonts.googleapis.com/css?family=Oswald:400,700' rel='stylesheet' type='text/css'>
+    <link rel="icon" type="image/png" href="src/favicon.ico" sizes="16x16" />
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.2/css/bootstrap.min.css"> <!-- load bootstrap css -->
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css"> <!-- load fontawesome -->
+    <style>
+        body {
+
+            /*Gradient*/
+            background: -webkit-linear-gradient(90deg, #50C9C3 10%, #96DEDA 90%);
+            /* Chrome 10+, Saf5.1+ */
+            background: -moz-linear-gradient(90deg, #50C9C3 10%, #96DEDA 90%);
+            /* FF3.6+ */
+            background: -ms-linear-gradient(90deg, #50C9C3 10%, #96DEDA 90%);
+            /* IE10 */
+            background: -o-linear-gradient(90deg, #50C9C3 10%, #96DEDA 90%);
+            /* Opera 11.10+ */
+            background: linear-gradient(90deg, #50C9C3 10%, #96DEDA 90%);
+            /* W3C */
+            height: 100%;
+        }
+
+        .container{
+            position: relative;
+            top: 70px;
+            background-color: #222222;
+            color: white;
+            /*
+                        box-shadow: 0px 0px 16px 1px rgba(119, 119, 119, 0.75);
+                        -moz-box-shadow: 0px 0px 16px 1px rgba(119, 119, 119, 0.75);
+                        -webkit-box-shadow: 0px 0px 16px 1px rgba(119, 119, 119, 0.75);
+            */
+        }
+
+        .fa {
+            color: white;
+        }
+
+        .background-wrapper {
+            background-image: url("img/IMG_0440.JPG");
+            background-size: cover;
+            height: 980px;
+            /**opacity : 0.7;**/
+        }
+    </style>
+</head>
+<body>
+<div class="background-wrapper">
+    <div class="container">
+        <div class="col-sm-6 col-sm-offset-3">
+            <h1><span class="fa fa-sign-in"></span> Login</h1>
+
+            <!-- show any messages that come back with authentication -->
+            <% if(message.length > 0) { %>
+            <div class="alert alert-danger"><%= message %></div>
+            <% } %>
+
+            <!-- LOGIN FORM -->
+            <form action="/login" method="post">
+                <div class="form-group">
+                    <label>Email</label>
+                    <input type="text" class="form-control" name="email">
+                </div>
+                <div class="form-group">
+                    <label>Password</label>
+                    <input type="password" class="form-control" name="password">
+                </div>
+
+                <!-- Submit Button -->
+                <button type="submit" class="btn btn-primary btn-md">Login</button>
+
+                <p>Or login with: <a href="/auth/facebook" class="btn btn-primary"><span class="fa fa-facebook"></span> Facebook</a></p>
+            </form>
+
+            <hr>
+
+            <p>Need an account? <a href="/signup">Signup</a></p>
+            <p>Or go <a href="/">home</a>.</p>
+
+        </div>
+    </div>
+</div>
+</body>
+</html>

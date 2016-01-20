@@ -1,0 +1,125 @@
+<!-- views/index.ejs -->
+<!doctype html>
+<html>
+<head>
+    <title>Carcinogen - Home Media Center</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href='https://fonts.googleapis.com/css?family=Oswald:400,700' rel='stylesheet' type='text/css'>
+    <link rel="icon" type="image/png" href="src/favicon.ico" sizes="16x16" />
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.2/css/bootstrap.min.css"> <!-- load bootstrap css -->
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css"> <!-- load fontawesome -->
+    <style>
+        body {
+            padding-top:80px;
+            /*Gradient*/
+            background: -webkit-linear-gradient(90deg, #50C9C3 10%, #96DEDA 90%);
+            /* Chrome 10+, Saf5.1+ */
+            background: -moz-linear-gradient(90deg, #50C9C3 10%, #96DEDA 90%);
+            /* FF3.6+ */
+            background: -ms-linear-gradient(90deg, #50C9C3 10%, #96DEDA 90%);
+            /* IE10 */
+            background: -o-linear-gradient(90deg, #50C9C3 10%, #96DEDA 90%);
+            /* Opera 11.10+ */
+            background: linear-gradient(90deg, #50C9C3 10%, #96DEDA 90%);
+            /* W3C */
+            height: 100%;
+        }
+
+        .jumbotron{
+            background-color: #222222;
+        }
+
+        p {
+            color: white;
+        }
+
+        #carcinogen-main-logo{
+            font-weight: bold;
+            color: white;
+            border: white solid 7px;
+            padding-top: 7px;
+            padding-bottom: 7px;
+            padding-left: 13px;
+            padding-right: 13px;
+            width: 170px;
+        }
+    </style>
+</head>
+<body>
+<!--NAVBAR -->
+<nav class="navbar navbar-inverse navbar-fixed-top" style="padding:11px; padding-bottom:4px;">
+    <div class="navbar-brand" style="border: 4px solid white; text-decoration: none; padding-top: 5px; padding-bottom: 10px; margin-left:4px;">
+        <!-- LOGO -->
+        <a class="collapse-buttons" onClick="loadPage('index')" href="javascript:void(0);" style="text-decoration: none;">
+            <h1 style="font-size: 30px; margin: 0; color:white;">Carcinogen</h1></a>
+    </div>
+    <div class="container">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div style="padding-left:3px; padding-bottom:3px;" class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+
+        </div>
+        <div class="">
+
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1" style="padding-bottom: 3px;">
+            <!-- NAVBAR ITEMS-->
+            <ul class="nav navbar-nav navbar-right nav-pills">
+                <li role="presentation dropdown">
+                    <a style="color:#1884BA" href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                        <span id="currentSongInfo" style="color:white; text-decoration: underline;"></span> - Playing Here and Now</a>
+                    <ul class="dropdown-menu" style="background-color:#222;border-right-width: 5px;border-left-width: 5px;border-left-color: #222;border-right-color: #222;">
+                        <!-- Music Player Buttons -->
+                        <li>
+                            <div class="btn-group btn-group-sm" role="group" aria-label="...">
+                                <button type="button" class="btn btn-default track-back"><span class="glyphicon glyphicon-step-backward " aria-hidden="true"></span></button>
+                                <button type="button" class="btn btn-default track-play-pause"><span id="playPause" class="glyphicon glyphicon-play" aria-hidden="true"></span></button>
+                                <button type="button" class="btn btn-default track-forward"><span class="glyphicon glyphicon-step-forward" aria-hidden="true"></span></button>
+                            </div>
+
+                            <div class="btn-group btn-group-sm" role="group" aria-label="...">
+                                <div id="small-album-pic-div" onClick="loadPage('player')">
+                                    <img id='small-album-artwork' src=''>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </li>
+
+                <li role="presentation" class="collapse-buttons active" style="padding-bottom:3px;">
+                    <a style="color:#1884BA" id="library" onClick="loadPage('library')" href="javascript:void(0);">Library <span id="librarySongCount" class="badge">6395</span></a></li>
+                <li role="presentation" class="collapse-buttons"><a style="color:#1884BA" id="home-stations" onClick="loadPage('homestations')" href="javascript:void(0);">Home Stations <span class="badge">3</span></a></li>
+                <li role="presentation" class="collapse-buttons"><a style="color:#1884BA" id="messages" onClick="loadPage('settings')" href="javascript:void(0);">Settings</a></li>
+
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                        <span id="icons" class="glyphicon glyphicon-search" aria-hidden="true"></span>
+                        <span id="icons" class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <!-- Search logic -->
+                        <li><a data-toggle="modal" data-target="#searchForm" class="searchButton search-song" href="#">Search for Song</a></li>
+                        <li><a data-toggle="modal" data-target="#searchForm" class="searchButton search-artist" href="#">Search for Artist</a></li>
+                        <li><a data-toggle="modal" data-target="#searchForm" class="searchButton search-album" href="#">Search for Album</a></li>
+                        <li role="separator" class="divider"></li>
+                        <li><a href="#">Configure Search Parameters</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        <!-- /.navbar-collapse -->
+    </div>
+    <!-- /.container-fluid -->
+</nav>
+<div class="container">
+
+</div>
+</body>
+</html>

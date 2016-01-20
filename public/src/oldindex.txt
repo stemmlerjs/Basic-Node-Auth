@@ -1,0 +1,84 @@
+ <!-- WELCOME MESSAGE-->
+            <div class="container">
+                <h1 style="font-family: 'Oswald', sans-serif;">Welcome Home!</h1>
+                <p class="lead"><span class="glyphicon glyphicon-headphones" aria-hidden="true"></span> See what's being played around the house</p>
+            </div>
+
+            <!-- DYNAMICALLY GENERATED INFORMATION ABOUT WHO IS PLAYING WHAT, etc. (STATIC FOR NOW) -->
+
+            <div>
+                <div class="container" style="background-color: black; height:30px; overflow:hidden">
+                    <h4 style="color: white;margin-top: 7px;">Now Playing - <span style="color:grey"><small>Living Room [Station A], Khalil's Room [Station B], Study [Station D]</small></span></h4>
+                </div>
+
+                <!--    NOW PLAYING 1    -->
+                <div class="container">
+                    <div class="row" style="border: 2px solid black;">
+                        <div class="col-sm-6 col-sm-4" style="border: 1px solid white; padding-top:6px;">
+                            <div class="thumbnail" style="margin-bottom: 7px;">
+                                <img src="files/topimp.jpg" alt="...">
+                                <div class="caption">
+                                    <div class="progress">
+                                        <div class="progress-bar" role="progressbar" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100" style="width: 10%;">
+                                            <span class="sr-only">10% Complete</span>
+                                        </div>
+                                    </div>
+                                    <h3><strong>King Kunta</strong></h3>
+                                    <p>Kendrick Lamar
+                                        <br>To Pimp A Butterfly</p>
+
+                                    <p> <a href="#" class="btn btn-primary" role="button"><span class="glyphicon glyphicon-step-backward" aria-hidden="true"></span></a>
+                                        <a href="#" class="btn btn-primary" role="button"><span class="glyphicon glyphicon-pause" aria-hidden="true"></span></a>
+                                        <a href="#" class="btn btn-primary" role="button"><span class="glyphicon glyphicon-step-forward" aria-hidden="true"></span></a>
+                                        <a href="#" class="btn btn-default" role="button">Merge</a></p>
+                                    <p>Living Room [Station A]</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!--    NOW PLAYING 2    -->
+                        <div class="col-sm-6 col-sm-4" style="border: 1px solid white; padding-top:6px;">
+                            <div class="thumbnail" style="margin-bottom: 7px;">
+                                <img src="files/albumart.jpg" alt="...">
+                                <div class="caption">
+                                    <div class="progress">
+                                        <div class="progress-bar" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 40%;">
+                                            <span class="sr-only">40% Complete</span>
+                                        </div>
+                                    </div>
+                                    <h3><strong>Jennifer's Veil</strong></h3>
+                                    <p>The Birthday Party
+                                        <br>Mutiny / The Bad Seed</p>
+
+                                    <p> <a href="#" class="btn btn-primary" role="button"><span class="glyphicon glyphicon-step-backward" aria-hidden="true"></span></a>
+                                        <a href="#" class="btn btn-primary" role="button"><span class="glyphicon glyphicon-pause" aria-hidden="true"></span></a>
+                                        <a href="#" class="btn btn-primary" role="button"><span class="glyphicon glyphicon-step-forward" aria-hidden="true"></span></a>
+                                        <a href="#" class="btn btn-default" role="button">Merge</a></p>
+                                    <p>Khalil's Room [Station B]</p>
+
+                                </div>
+                            </div>
+                        </div>
+
+                        <!--    NOW PLAYING 3    -->
+                        <div class="col-sm-6 col-sm-4" style="border: 1px solid white; padding-top:6px;">
+                            <div class="thumbnail" style="margin-bottom: 7px;">
+                                <img src="files/goo-560x560.jpeg" alt="...">
+                                <div class="caption">
+                                    <div class="progress">
+                                        <div class="progress-bar" role="progressbar" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100" style="width: 95%;">
+                                            <span class="sr-only">95% Complete</span>
+                                        </div>
+                                    </div>
+                                    <h3><strong>Mildred Pierce</strong></h3>
+                                    <p>Sonic Youth
+                                        <br>Goo</p>
+
+                                    <p> <a href="#" class="btn btn-primary" role="button"><span class="glyphicon glyphicon-step-backward" aria-hidden="true"></span></a>
+                                        <a href="#" class="btn btn-primary" role="button"><span class="glyphicon glyphicon-pause" aria-hidden="true"></span></a>
+                                        <a href="#" class="btn btn-primary" role="button"><span class="glyphicon glyphicon-step-forward" aria-hidden="true"></span></a>
+                                        <a href="#" class="btn btn-default" role="button">Merge</a></p>
+                                    <p>Study [Station D]</p>
+                                </div>
+                            </div>
+                        </div>
